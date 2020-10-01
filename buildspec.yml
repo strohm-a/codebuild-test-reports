@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - echo Parsing Code coverage reports
+reports:
+  "my-test-reports"
+  php-report:
+    files:
+      - "reports/php-unit.xml"
+    file-format: "NUNITXML"
+  nunit-report:
+    files:
+      - "reports/test-nunit.xml"
+    file-format: "NUNITXML"
