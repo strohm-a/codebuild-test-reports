@@ -6,9 +6,9 @@ phases:
 reports:
   php-report:
     files:
-      - "reports/php-unit.xml"
+      - "reports/php/*.xml"
     file-format: "JUNITXML"
   nunit-report:
     files:
-      - "reports/test-nunit.xml"
+      - "reports/nunit/*.xml"
     file-format: "NUNITXML"
