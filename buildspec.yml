@@ -4,7 +4,7 @@ phases:
     commands:
       - echo Parsing Code coverage reports
 reports:
-  "my-reports-group":
+  "my-report-group":
   php-report:
     files:
       - "reports/php-unit.xml"
