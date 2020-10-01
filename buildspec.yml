@@ -7,7 +7,7 @@ reports:
   php-report:
     files:
       - "reports/php-unit.xml"
-    file-format: "NUNITXML"
+    file-format: "JUNITXML"
   nunit-report:
     files:
       - "reports/test-nunit.xml"
