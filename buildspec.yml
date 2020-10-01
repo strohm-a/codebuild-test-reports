@@ -2,7 +2,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo Parsing Code coverage reports
+      - echo Parsing test reports
 reports:
   php-report:
     files:
