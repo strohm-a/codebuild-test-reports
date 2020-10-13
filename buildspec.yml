@@ -5,7 +5,7 @@ env:
     MY_ENV_VAR_2: "hello strohm 2"
   secrets-manager:
 #    MY_LOCAL_SECRET_VAR: "arn:aws:secretsmanager:us-west-2:972506530580:secret:TestSecret-q4sFQo"
-    MY_LOCAL_SECRET_VAR: "TestSecret"
+    MY_LOCAL_SECRET_VAR: "TestSecret:MY_SECRET_VAR"
 
 phases:
   build:
