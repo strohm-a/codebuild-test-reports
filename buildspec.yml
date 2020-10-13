@@ -3,12 +3,16 @@ env:
   variables:
     MY_ENV_VAR_1: "hello strohm 1"
     MY_ENV_VAR_2: "hello strohm 2"
+  secrets-manager:
+    MY_LOCAL_SECRET_VAR: "arn:aws:secretsmanager:us-west-2:972506530580:secret:TestSecret-q4sFQo"
+
 phases:
   build:
     commands:
       - echo Parsing test reports
       - echo "PATH:" $PATH
       - echo "MY_ENV_VAR_1:" $MY_ENV_VAR_1
+      - echo "MY_LOCAL_SECRET_VAR:" $MY_LOCAL_SECRET_VAR
 reports:
   php-report:
     files:
