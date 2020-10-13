@@ -1,8 +1,14 @@
 version: 0.2
+env:
+  variables:
+    MY_ENV_VAR_1: "hello strohm 1"
+    MY_ENV_VAR_2: "hello strohm 2"
 phases:
   build:
     commands:
       - echo Parsing test reports
+      - echo "PATH:" $PATH
+      - echo "MY_ENV_VAR_1:" $MY_ENV_VAR_1
 reports:
   php-report:
     files:
