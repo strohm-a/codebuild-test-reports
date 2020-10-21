@@ -14,10 +14,11 @@ phases:
       - echo "PATH:" $PATH
       - echo "MY_ENV_VAR_1:" $MY_ENV_VAR_1
       - echo "MY_LOCAL_SECRET_VAR:" $MY_LOCAL_SECRET_VAR
+      - codebuild-breakpoint
 reports:
   php-report:
     files:
-      - "reports/php-bad/*.xml"
+      - "reports/php/*.xml"
     file-format: "JUNITXML"
   nunit-report:
     files:
